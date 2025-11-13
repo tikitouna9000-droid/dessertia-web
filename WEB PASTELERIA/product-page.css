@@ -1,0 +1,210 @@
+/* ========== PÁGINA DE DETALLE DE PRODUCTO ========== */
+
+.product-detail {
+    min-height: 100vh;
+    padding: 8rem 2rem 4rem;
+    background: #000000;
+}
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+/* Botón volver */
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #a8a8a8;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    color: #e8e8e8;
+    transform: translateX(-0.5rem);
+}
+
+/* Título del producto */
+.product-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #c0c0c0, #e8e8e8, #a8a8a8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.product-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #a8a8a8;
+    margin-bottom: 3rem;
+}
+
+/* Galería de fotos */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.25rem;
+    background: #2d2d2d;
+    box-shadow: 0 0.625rem 2.5rem rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    aspect-ratio: 1 / 1;
+}
+
+.gallery-item:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1.25rem 3.75rem rgba(0, 0, 0, 0.5);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Descripción del producto */
+.product-description {
+    background: linear-gradient(135deg, rgba(45, 45, 45, 0.9), rgba(74, 74, 74, 0.6));
+    border-radius: 1.875rem;
+    padding: 3rem;
+    margin: 3rem 0;
+    backdrop-filter: blur(0.625rem);
+}
+
+.product-description h2 {
+    font-size: 2rem;
+    color: #c0c0c0;
+    margin-bottom: 1.5rem;
+}
+
+.product-description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #d4d4d4;
+    margin-bottom: 2rem;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li {
+    font-size: 1.1rem;
+    color: #d4d4d4;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(168, 168, 168, 0.2);
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+/* Sección CTA */
+.cta-section {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.cta-section h3 {
+    font-size: 1.8rem;
+    color: #c0c0c0;
+    margin-bottom: 2rem;
+}
+
+.cta-section .cta-button {
+    display: inline-block;
+    padding: 1.2rem 2.5rem;
+    background: linear-gradient(45deg, #25D366, #128C7E);
+    color: white;
+    text-decoration: none;
+    border-radius: 3.125rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.5rem 1.5625rem rgba(37, 211, 102, 0.3);
+}
+
+.cta-section .cta-button:hover {
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0.9375rem 2.1875rem rgba(37, 211, 102, 0.5);
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Tablets */
+@media (max-width: 64rem) {
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* celulares promedio */
+@media (max-width: 48rem) {
+    .product-detail {
+        padding: 6rem 1rem 3rem;
+    }
+
+    .product-title {
+        font-size: 2rem;
+    }
+
+    .product-subtitle {
+        font-size: 1rem;
+    }
+
+    .photo-gallery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .product-description {
+        padding: 2rem;
+    }
+
+    .product-description h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .cta-section .cta-button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+/* celulares chicos */
+@media (max-width: 30rem) {
+    .product-title {
+        font-size: 1.8rem;
+    }
+
+    .back-button {
+        font-size: 0.9rem;
+    }
+}

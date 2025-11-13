@@ -1,0 +1,258 @@
+/* ========== ESTILOS ESPECÍFICOS PARA PROMOCIÓN NAVIDEÑA ========== */
+
+/* Header Promocional */
+.promo-header {
+    background: linear-gradient(135deg, #1a472a 0%, #2d5f3f 50%, #8b0000 100%);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1.875rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 1.25rem 3.75rem rgba(139, 0, 0, 0.3);
+}
+
+.promo-header h1 {
+    font-size: 3rem;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+}
+
+.promo-header .emoji-decoration {
+    font-size: 2rem;
+    display: block;
+    margin: 1rem 0;
+}
+
+.promo-header .promo-subtitle {
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.promo-badge {
+    display: inline-block;
+    background: #8b0000;
+    color: #ffd700;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 15px rgba(139, 0, 0, 0.5);
+}
+
+/* Contador Regresivo */
+.countdown-timer {
+    background: rgba(139, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 1.25rem;
+    text-align: center;
+    margin: 2rem 0;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+.countdown-timer h3 {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.timer-display {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.timer-box {
+    background: #2d2d2d;
+    padding: 1rem 1.5rem;
+    border-radius: 0.75rem;
+    min-width: 80px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.timer-box .number {
+    font-size: 2rem;
+    color: #ffd700;
+    font-weight: bold;
+    display: block;
+}
+
+.timer-box .label {
+    font-size: 0.9rem;
+    color: #a8a8a8;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+/* Ofertas Especiales */
+.special-offer {
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.3), rgba(45, 95, 63, 0.3));
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 2px solid #ffd700;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.special-offer:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.75rem 2rem rgba(255, 215, 0, 0.2);
+}
+
+.special-offer h3 {
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.special-offer p {
+    color: #d4d4d4;
+    font-size: 1rem;
+}
+
+.offer-title {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.offer-description {
+    font-size: 1.1rem;
+    color: #d4d4d4;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.price-tag {
+    background: #8b0000;
+    color: #ffd700;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    box-shadow: 0 4px 15px rgba(139, 0, 0, 0.4);
+}
+
+.info-title {
+    color: #c0c0c0;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* CTA Section Navideña */
+.cta-urgency {
+    color: #ffd700;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cta-button-christmas {
+    background: linear-gradient(45deg, #1a472a, #2d5f3f) !important;
+    box-shadow: 0 0.5rem 1.5625rem rgba(26, 71, 42, 0.5) !important;
+}
+
+.cta-button-christmas:hover {
+    background: linear-gradient(45deg, #2d5f3f, #1a472a) !important;
+    box-shadow: 0 0.9375rem 2.1875rem rgba(26, 71, 42, 0.7) !important;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Tablets */
+@media (max-width: 64rem) {
+    .promo-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .timer-box {
+        min-width: 70px;
+        padding: 0.75rem 1rem;
+    }
+}
+
+/* Móviles */
+@media (max-width: 48rem) {
+    .promo-header {
+        padding: 1.5rem 1rem;
+    }
+
+    .promo-header h1 {
+        font-size: 2rem;
+    }
+    
+    .promo-header .promo-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .promo-header .emoji-decoration {
+        font-size: 1.5rem;
+    }
+
+    .promo-badge {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .countdown-timer {
+        padding: 1.5rem 1rem;
+    }
+
+    .countdown-timer h3 {
+        font-size: 1.2rem;
+    }
+    
+    .timer-box {
+        min-width: 60px;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .timer-box .number {
+        font-size: 1.5rem;
+    }
+
+    .timer-box .label {
+        font-size: 0.75rem;
+    }
+
+    .special-offer {
+        padding: 1rem;
+    }
+
+    .offer-title {
+        font-size: 1.2rem;
+    }
+
+    .offer-description {
+        font-size: 0.95rem;
+    }
+
+    .price-tag {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 30rem) {
+    .promo-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .timer-display {
+        gap: 0.5rem;
+    }
+
+    .timer-box {
+        min-width: 50px;
+    }
+
+    .timer-box .number {
+        font-size: 1.2rem;
+    }
+}
