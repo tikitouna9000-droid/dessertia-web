@@ -71,13 +71,3 @@ if (menuToggle && navLinks) {
     });
 }
 
-// Efecto parallax suave en el hero (opcional) - deshabilitado para evitar problemas de scroll
-/* 
-window.addEventListener('scroll', () => {
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        const scrolled = window.pageYOffset;
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-    }
-});
-*/

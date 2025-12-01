@@ -1,6 +1,6 @@
-// ========== CONTADOR REGRESIVO NAVIDEÑO ==========
+//  CONTADOR REGRESIVO NAVIDEÑO
 
-// ⚙️ CONFIGURACIÓN: Cambiá esta fecha para tu promoción
+
 const endDate = new Date('December 25, 2025 00:00:00').getTime();
 
 // Función principal del contador
@@ -39,9 +39,9 @@ updateCountdown();
 // Actualizar cada segundo
 setInterval(updateCountdown, 1000);
 
-// ========== EFECTOS ADICIONALES (OPCIONAL) ==========
 
-// Animación de nieve (descomentar si querés agregar efecto de nieve)
+
+// Animación de nieve 
 /*
 function createSnowflake() {
     const snowflake = document.createElement('div');
@@ -79,6 +79,6 @@ style.textContent = `
 document.head.appendChild(style);
 */
 
-// ========== LOG DE DEBUG (opcional, podés borrarlo) ==========
+// 
 console.log('🎄 Promo Navidad cargada correctamente');
 console.log('📅 Fecha fin:', new Date(endDate).toLocaleString('es-AR'));

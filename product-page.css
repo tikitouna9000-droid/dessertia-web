@@ -1,4 +1,4 @@
-/* ========== PÁGINA DE DETALLE DE PRODUCTO ========== */
+/*  PÁGINA DE DETALLE DE PRODUCTO */
 
 .product-detail {
     min-height: 100vh;
@@ -11,7 +11,7 @@
     margin: 0 auto;
 }
 
-/* Botón volver */
+
 .back-button {
     display: inline-flex;
     align-items: center;
@@ -28,7 +28,7 @@
     transform: translateX(-0.5rem);
 }
 
-/* Título del producto */
+
 .product-title {
     font-size: 3rem;
     text-align: center;
@@ -46,7 +46,7 @@
     margin-bottom: 3rem;
 }
 
-/* Galería de fotos */
+
 .photo-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
@@ -80,7 +80,7 @@
     transform: scale(1.1);
 }
 
-/* Descripción del producto */
+
 .product-description {
     background: linear-gradient(135deg, rgba(45, 45, 45, 0.9), rgba(74, 74, 74, 0.6));
     border-radius: 1.875rem;
@@ -118,7 +118,7 @@
     border-bottom: none;
 }
 
-/* Sección CTA */
+
 .cta-section {
     text-align: center;
     padding: 3rem 0;
@@ -148,7 +148,7 @@
     box-shadow: 0 0.9375rem 2.1875rem rgba(37, 211, 102, 0.5);
 }
 
-/* ========== MEDIA QUERIES ========== */
+/* MEDIA QUERIES = */
 
 /* Tablets */
 @media (max-width: 64rem) {

@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ========== HEADER Y NAVEGACIÓN ========== */
+/* HEADER Y NAVEGACIÓN */
 header {
     position: fixed;
     top: 0;
@@ -198,7 +198,7 @@ nav {
     }
 }
 
-/* ========== SECCIONES ========== */
+/*  SECCIONES  */
 .section {
     padding: 5rem 2rem;
     max-width: 75rem;
@@ -226,7 +226,7 @@ nav {
     border-radius: 0.125rem;
 }
 
-/* ========== PRODUCTOS ========== */
+/*  PRODUCTOS  */
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
@@ -314,7 +314,7 @@ nav {
     font-size: 0.9rem;
 }
 
-/* ========== SOBRE MÍ ========== */
+/* SOBRE MÍ  */
 .about {
     background: linear-gradient(135deg, rgba(45, 45, 45, 0.9), rgba(74, 74, 74, 0.6));
     border-radius: 1.875rem;
@@ -332,7 +332,7 @@ nav {
     margin: 0 auto;
 }
 
-/* ========== CONTACTO ========== */
+/*  CONTACTO  */
 .contact {
     text-align: center;
     background: #2d2d2d;
@@ -368,7 +368,7 @@ nav {
     box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.6);
 }
 
-/* ========== FOOTER ========== */
+/*  FOOTER  */
 footer {
     background: #000000;
     color: white;
@@ -376,7 +376,7 @@ footer {
     padding: 2rem;
 }
 
-/* ========== ANIMACIONES ========== */
+/*  ANIMACIONES  */
 .fade-in {
     opacity: 0;
     transform: translateY(1.875rem);
@@ -388,7 +388,7 @@ footer {
     transform: translateY(0);
 }
 
-/* ========== MEDIA QUERIES ========== */
+/* MEDIA QUERIES  */
 
 /* Tablets y pantallas medianas (641px - 1024px) */
 @media (min-width: 40.063rem) and (max-width: 64rem) {
