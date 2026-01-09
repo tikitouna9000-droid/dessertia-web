@@ -86,7 +86,7 @@
     margin-top: 0.25rem;
 }
 
-/* Ofertas Especiales */
+/* Ofertas  */
 .special-offer {
     background: linear-gradient(135deg, rgba(139, 0, 0, 0.3), rgba(45, 95, 63, 0.3));
     padding: 1.5rem;
@@ -144,7 +144,7 @@
     font-size: 1.5rem;
 }
 
-/* CTA Section Navideña */
+/* CTA  Navideña */
 .cta-urgency {
     color: #ffd700;
     margin-bottom: 2rem;
@@ -162,7 +162,7 @@
     box-shadow: 0 0.9375rem 2.1875rem rgba(26, 71, 42, 0.7) !important;
 }
 
-/* ========== MEDIA QUERIES ========== */
+/* Media querie */
 
 /* Tablets */
 @media (max-width: 64rem) {
@@ -176,7 +176,7 @@
     }
 }
 
-/* Móviles */
+
 @media (max-width: 48rem) {
     .promo-header {
         padding: 1.5rem 1rem;
@@ -238,7 +238,7 @@
     }
 }
 
-/* Móviles pequeños */
+
 @media (max-width: 30rem) {
     .promo-header h1 {
         font-size: 1.5rem;
