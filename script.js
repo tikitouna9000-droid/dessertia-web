@@ -1,14 +1,24 @@
-// Smooth scroll para los enlaces de navegación (solo para enlaces internos de la misma página)
+// Efecto de scroll en el header
+const header = document.querySelector('header');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+// Smooth scroll para los enlaces de navegación
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        // Solo aplicar smooth scroll si el enlace es de la misma página
-        if (this.getAttribute('href').startsWith('#')) {
+        const href = this.getAttribute('href');
+        if (href.startsWith('#')) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const target = document.querySelector(href);
             if (target) {
-                const headerOffset = 80; // Altura del header fijo
+                const headerHeight = document.querySelector('header').offsetHeight;
                 const elementPosition = target.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
 
                 window.scrollTo({
                     top: offsetPosition,
@@ -43,18 +53,16 @@ productCards.forEach((card, index) => {
     card.style.animationDelay = `${index * 0.1}s`;
 });
 
-// Menú hamburguesa para celus
+// Menú hamburguesa
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
 
 if (menuToggle && navLinks) {
-    // Toggle del menu
     menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
         menuToggle.classList.toggle('active');
     });
 
-    // Cerrar menu al hacer clic en un enlace
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
@@ -62,7 +70,6 @@ if (menuToggle && navLinks) {
         });
     });
 
-    // Cerrar menu al hacer clic fuera
     document.addEventListener('click', (e) => {
         if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
             navLinks.classList.remove('active');
@@ -70,4 +77,3 @@ if (menuToggle && navLinks) {
         }
     });
 }
-

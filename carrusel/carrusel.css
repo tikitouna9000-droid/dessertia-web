@@ -1,0 +1,61 @@
+.carousel-section {
+    padding: 4rem 0;
+    background: #000000;
+    overflow: hidden;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.carousel-slide {
+    flex: 0 0 33.333%; /* Muestra 3 fotos en desktop */
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 0.625rem;
+    filter: grayscale(20%);
+    transition: all 0.3s ease;
+    border: 0.0625rem solid rgba(168, 168, 168, 0.2);
+}
+
+.carousel-slide img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+    border-color: #a8a8a8;
+}
+
+/* Responsivo para el carrusel */
+
+/* Tablets */
+@media (max-width: 64rem) {
+    .carousel-slide {
+        flex: 0 0 50%; /* Muestra 2 fotos */
+    }
+    .carousel-slide img {
+        height: 20rem;
+    }
+}
+
+/* Móviles */
+@media (max-width: 30rem) {
+    .carousel-slide {
+        flex: 0 0 100%; /* Muestra 1 foto */
+    }
+    .carousel-slide img {
+        height: 18.75rem;
+    }
+}

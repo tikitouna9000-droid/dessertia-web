@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dessertia Sabores</title>
+    <link rel="icon" type="image/png" href="dessertia-2026/dessertia/dessertia logo s-fondo 2048x2048.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="product-page.css">
+    <link rel="stylesheet" href="carrusel/carrusel.css">
 </head>
 <body>
     <header>
         <nav>
             <a href="#" class="logo">
-                <img src="" alt="Dessertia Logo">
+                <img src="dessertia-2026/dessertia/dessertia logo s-fondo 2048x2048.png" alt="Dessertia Logo">
             </a>
 
             <button class="menu-toggle" id="menuToggle" aria-label="Menú">
@@ -23,6 +25,7 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
+                <li><a href="#galeria">Galería</a></li>
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -38,10 +41,28 @@
         </div>
     </section>
 
+    <section id="galeria" class="carousel-section fade-in">
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <!-- Las imágenes se repetirán para el efecto infinito -->
+                <div class="carousel-slide"><img src="pastafrola/alfajor.jpg" alt="Alfajores Artesanales"></div>
+                <div class="carousel-slide"><img src="pastafrola/lemon pie.jpg" alt="Lemon Pie"></div>
+                <div class="carousel-slide"><img src="pastafrola/tarta frutilla.jpg" alt="Tarta de Frutilla"></div>
+                <div class="carousel-slide"><img src="pastafrola/pastafrola cuadrada.jpg" alt="Pastafrola"></div>
+                <div class="carousel-slide"><img src="pastafrola/tarta brownie.jpg" alt="Tarta Brownie"></div>
+                <div class="carousel-slide"><img src="pastafrola/tarta tofi.jpg" alt="Tarta Tofi"></div>
+                <!-- Clonación para infinito suave (los primeros 3 o 4) -->
+                <div class="carousel-slide"><img src="pastafrola/alfajor.jpg" alt="Alfajores Artesanales"></div>
+                <div class="carousel-slide"><img src="pastafrola/lemon pie.jpg" alt="Lemon Pie"></div>
+                <div class="carousel-slide"><img src="pastafrola/tarta frutilla.jpg" alt="Tarta de Frutilla"></div>
+            </div>
+        </div>
+    </section>
+
     <section id="productos" class="section">
         <h2 class="fade-in">Nuestras Creaciones</h2>
         <div class="products-grid">
-            <a href="cookies.html" class="product-card fade-in">
+            <a href="productos/cookies.html" class="product-card fade-in">
                 <div class="product-image">
                     <img src="./pastafrola/galletitas.jpg" alt="Cookies Personalizadas">
                 </div>
@@ -50,7 +71,7 @@
                     <p>Diseños únicos para que encuentres ese que tanto te gusta.</p>
                 </div>
             </a>
-            <a href="pastafrolas.html" class="product-card fade-in">
+            <a href="productos/pastafrolas.html" class="product-card fade-in">
                 <div class="product-image">
                     <img src="./pastafrola/pastafrola en caja.jpg" class="pastafrola-img" alt="Pastafrola">
                 </div>
@@ -59,7 +80,7 @@
                     <p>Deliciosas pastafrolas con variedades de relleno a gusto del cliente.</p>
                 </div>
             </a>
-            <a href="tartas.html" class="product-card fade-in">
+            <a href="productos/tartas.html" class="product-card fade-in">
                 <div class="product-image">
                     <img src="./pastafrola/tarta frutilla.jpg" class="pastafrola-img" alt="Tartas">
                 </div>
@@ -68,7 +89,7 @@
                     <p>Hermosas y ricas tartas a pedido con una variedad inmensa de gustos y sabores.</p>
                 </div>
             </a>
-            <a href="alfajores.html" class="product-card fade-in">
+            <a href="productos/alfajores.html" class="product-card fade-in">
                 <div class="product-image">
                     <img src="./pastafrola/alfajor.jpg" alt="Alfajores">
                 </div>
@@ -77,7 +98,7 @@
                     <p>Alfajores artesanales con baño de chocolate semi amargo con relleno a elección</p>
                 </div>
             </a>
-            <a href="budines.html" class="product-card fade-in">
+            <a href="productos/budines.html" class="product-card fade-in">
                 <div class="product-image">
                     <img src="./pastafrola/bizcochuelo.jpg" alt="Budines">
                 </div>
@@ -86,7 +107,7 @@
                     <p>Perfectos para una tarde matera</p>
                 </div>
             </a>
-            <a href="tortas.html" class="product-card fade-in">
+            <a href="productos/tortas.html" class="product-card fade-in">
                 <div class="product-image">
                     <img src="./pastafrola/tarta brownie.jpg" alt="Tortas">
                 </div>
@@ -118,10 +139,12 @@
                 Contáctame a través de mis redes sociales para hacer tu pedido personalizado.
             </p>
             <div class="social-links">
-                <a href="https://www.instagram.com/dessertia_sabores?igsh=MWg4bjdscWNhcHowNg==" target="_blank" rel="noopener" class="social-link" title="Instagram">📷</a>
-                <a href="https://wa.me/5491151089902?text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener" class="social-link" title="WhatsApp">💬</a>
-                <a href="#" class="social-link" title="Facebook">📘</a>
-                <a href="#" class="social-link" title="Email">✉️</a>
+                <a href="https://www.instagram.com/dessertia_sabores?igsh=MWg4bjdscWNhcHowNg==" target="_blank" rel="noopener" class="social-link" title="Instagram">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png" alt="Instagram">
+                </a>
+                <a href="https://wa.me/5491151089902?text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener" class="social-link" title="WhatsApp">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/whatsapp-white-icon.png" alt="WhatsApp">
+                </a>
             </div>
         </div>
     </section>
@@ -129,7 +152,14 @@
     <footer>
         <p>&copy; 2025 Dessertia Sabores. Hecho con amor para endulzar tu vida.</p>
     </footer>
+
+    <!-- Modal para ver imágenes en grande -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="fullImage">
+    </div>
     
+    <script src="carrusel/carrusel.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
